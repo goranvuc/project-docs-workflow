@@ -39,7 +39,11 @@ Fingerprint method: sort relative file path strings lexicographically, case-sens
 
 ## GitHub and installation evidence
 
-The local checks above do not establish remote availability or a successful installation. Those checks are recorded here after they have actually been performed.
+- The repository was created as public at [goranvuc/project-docs-workflow](https://github.com/goranvuc/project-docs-workflow), with `main` as its default branch. The first published revision was `05975eabb92057215b5635e538504c262bb79f6d`; the local and remote branch values matched.
+- GitHub Actions completed its structural validation successfully for that revision: [recorded run](https://github.com/goranvuc/project-docs-workflow/actions/runs/37021703928).
+- The bundled Codex Skill Installer was run with the README's GitHub folder URL, `--method download`, and an empty temporary destination. It downloaded the remote package successfully; no local source checkout was used by the installer. SHA-256 comparison confirmed that all eight downloaded files matched the reviewed source byte-for-byte.
+- The same remote download was then installed into the default user directory, `$CODEX_HOME/skills/project-docs-workflow/`. All eight installed files matched the reviewed source byte-for-byte. No existing installation was overwritten.
+- These are download and on-disk installation checks. Discovery through a subsequent interactive Codex turn was not separately exercised during this publication session; the README includes the exact non-mutating prompt for that check.
 
 ## Limits and maintenance
 
