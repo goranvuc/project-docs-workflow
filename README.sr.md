@@ -22,7 +22,9 @@ Koristan je kada projekat traje kroz više sesija, saradnika ili agenata i posta
 
 Na primer, sesija otkrije da CSV izvoz gubi vodeće nule. Prihvaćeni ugovor i dalje zahteva očuvanje identifikatora. Dokumentaciona faza beleži odstupanje, prenosi popravku u otvorenu stavku plana i povezuje izvorni dokaz. Journal se zatim može arhivirati dok popravka ostaje izričito otvorena.
 
-Tok podržava projekte koji se duže razvijaju. Malom prototipu mogu biti dovoljni kratak pregled, plan i zapisi sesija. Postojeći nazivi dokumenata i korisne konvencije se čuvaju. Nema obaveznog tehnološkog steka, fiksnog kataloga dokumenata ni novog servisa za upravljanje projektom.
+Tok podržava projekte koji se duže razvijaju. Malom prototipu mogu biti dovoljni kratak pregled, plan i zapisi sesija. Nema obaveznog tehnološkog steka, fiksnog kataloga dokumenata ni novog servisa za upravljanje projektom.
+
+Pri uspostavljanju ili prilagođavanju toka održavana projektna dokumentacija podrazumevano se objedinjuje u `docs/`, uključujući samostalna uputstva prethodno razbacana po korenu. **Očuvanje korisnog sadržaja ne zahteva očuvanje njegove putanje.** Premeštanje obuhvata popravku linkova i relevantnih referenci u skriptama i konfiguraciji. Ulazni dokumenti poput `README.md`, `AGENTS.md` i `CLAUDE.md` ostaju u korenu. Konkretni izuzeci, uključujući putanje koje zahteva alat ili već uspostavljen odgovarajući direktorijum dokumentacije, beleže se u lokalnoj mapi. Mali projekat i dalje može objediniti uloge u README fajlu. Procena samo predlaže izmene; redovna obrada journala ne pokreće reorganizaciju.
 
 ## Instalacija u Codexu
 
@@ -93,7 +95,7 @@ Za prilagođavanje postojećeg repozitorijuma:
 
 ```text
 Upotrebi $project-docs-workflow da prilagodiš postojeći dokumentacioni tok.
-Sačuvaj prihvaćene odluke i korisne dokumente. Poveži postojeće fajlove sa ulogama
+Sačuvaj prihvaćene odluke i koristan sadržaj. Poveži postojeće fajlove sa ulogama
 pre dodavanja novih i zadrži jedan operativni plan.
 ```
 

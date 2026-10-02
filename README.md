@@ -22,7 +22,9 @@ It is useful when a project spans many sessions, contributors, or agents and rec
 
 For example, a session discovers that CSV export drops leading zeros. The approved contract still requires preserving identifiers. A documentation phase records the deviation, transfers the repair to an open plan item, and links the original evidence. The journal can then be archived while the repair remains explicitly open.
 
-The workflow supports long-lived repositories. A small prototype may need only a short overview, a plan, and session records. Existing document names and useful conventions are preserved. There is no mandatory stack, fixed catalog of documents, or new project-management service.
+The workflow supports long-lived repositories. A small prototype may need only a short overview, a plan, and session records. There is no mandatory stack, fixed catalog of documents, or new project-management service.
+
+During setup or adaptation, maintained project documentation is brought together under `docs/` by default, including standalone guides previously scattered at the root. **Preserving useful content does not require preserving its path.** A move includes repairing links and relevant script/configuration references. Root entry documents such as `README.md`, `AGENTS.md`, and `CLAUDE.md` stay in place. Concrete exceptions, including tool-required paths or an established equivalent documentation directory, are recorded in the local map. A tiny project may still combine roles in its README. Assessment only recommends changes; routine journal consolidation does not trigger a reorganization.
 
 ## Install in Codex
 
@@ -93,7 +95,7 @@ To adapt an established repository:
 
 ```text
 Use $project-docs-workflow to adapt the existing documentation workflow.
-Preserve accepted decisions and useful documents. Map existing files to roles
+Preserve accepted decisions and useful content. Map existing files to roles
 before adding new ones, and keep a single operational plan.
 ```
 

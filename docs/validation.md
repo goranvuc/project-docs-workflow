@@ -1,6 +1,6 @@
 # Validation scope and evidence
 
-Date: 2026-10-02. Package version: 0.1.0. These are observed checks of this distribution, not guarantees about projects that later adopt it.
+Date: 2026-10-02. Initial package version: 0.1.0; later checks are recorded under their version below. These are observed checks of this distribution, not guarantees about projects that later adopt it.
 
 ## Local structural checks
 
@@ -44,6 +44,28 @@ Fingerprint method: sort relative file path strings lexicographically, case-sens
 - The bundled Codex Skill Installer was run with the README's GitHub folder URL, `--method download`, and an empty temporary destination. It downloaded the remote package successfully; no local source checkout was used by the installer. SHA-256 comparison confirmed that all eight downloaded files matched the reviewed source byte-for-byte.
 - The same remote download was then installed into the default user directory, `$CODEX_HOME/skills/project-docs-workflow/`. All eight installed files matched the reviewed source byte-for-byte. No existing installation was overwritten.
 - These are download and on-disk installation checks. Discovery through a subsequent interactive Codex turn was not separately exercised during this publication session; the README includes the exact non-mutating prompt for that check.
+
+## Version 0.1.1 — documentation home
+
+Setup/adaptation now defaults to consolidating maintained project documents under `docs/`, preserving useful content rather than automatically preserving its path. Root entrypoints and concrete location exceptions remain supported. The local-instructions template and both README versions carry the same rule; assessment and journal-consolidation scope remain bounded.
+
+- The repository structural validator and bundled Codex skill-creator validator passed for the revised package. Whitespace checks passed.
+- An independent read-only review found no material mismatch between the English and Serbian guidance or the skill. It checked the move default, exceptions, minimal-project allowance, scope boundaries, and reference-repair procedure.
+
+Two agents applied the revised skill to isolated synthetic fixtures using the same ordinary adaptation request, without being given expected destinations. The author separately verified the resulting moves, links, configuration paths, retained content, and unchanged application source.
+
+| Scenario | Observed result |
+|---|---|
+| Existing standalone root guides, plan, image link, and JSON documentation inputs | The evaluator moved both guides and the sole existing roadmap into `docs/`; repaired incoming and outgoing links, the asset reference, and all three JSON paths; retained the accepted contract and open task. All 26 relative links/anchors/image references resolved. Source, asset, and license bytes were unchanged. |
+| Explicitly approved `handbook/` with a remaining root operations guide | The evaluator retained `handbook/`, recorded the reason, and moved the operations guide there without creating a competing `docs/`. All 22 relative links/anchors resolved. Source was unchanged; the owner decision stayed open. |
+
+Each fixture received one session record. These exercises verified documentation behavior only; application tests, publication, and live operations were outside their scope. The minimal-project and read-only cases recorded for 0.1.0 were reviewed for rule compatibility, not re-executed for 0.1.1.
+
+The eight-file package fingerprint, using the method above, is:
+
+```text
+a1138061a9cdbad909f2a47d8492c53261ac48b146e60cf21cf8a3eb373d6dd9
+```
 
 ## Limits and maintenance
 

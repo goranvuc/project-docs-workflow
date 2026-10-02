@@ -2,7 +2,7 @@
 name: project-docs-workflow
 description: Establish, adapt, assess, or consolidate repository documentation with one active plan, explicit decisions, session evidence, and traceable archiving. Use for project documentation workflows and documentation phases. Ordinary feature work and isolated prose edits do not require this workflow.
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # Project Docs Workflow
@@ -14,7 +14,7 @@ Help the next person or agent recover what the project does, which decisions app
 | Request | Action | Output |
 |---|---|---|
 | Assess or review | Read relevant sources; identify gaps and conflicts | Findings in the answer; no repository writes unless a durable report was requested |
-| Establish or adapt | Map existing documents to roles; fill necessary gaps | A small, usable local documentation contract |
+| Establish, adapt, or reorganize | Map existing documents to roles and the documentation home; fill necessary gaps | A small, usable local documentation contract |
 | Consolidate / documentation phase | Reconcile evidence and accepted decisions; transfer findings; archive processed notes | Updated documents and plan, with traceable absorption |
 | Validate | Inspect links, metadata, claim support, and finding destinations | Results with structural and semantic limits stated separately |
 
@@ -44,6 +44,8 @@ Map these roles onto useful existing files before introducing new ones:
 A small project may combine roles in clearly labeled sections. Create focused documents only when real content justifies them. Keep one authoritative home for each rule, decision, or scheduled task; use links elsewhere. Preserve the project's language and terminology.
 
 ## Establish or adapt
+
+Default to one `docs/` home for maintained project documentation, including existing standalone setup, architecture, and validation guides. Preserve useful content and accepted decisions; preserving a document does not require preserving its path. Keep entry documents such as `README.md`, `AGENTS.md`, and `CLAUDE.md` at the root. Retain another location only for a concrete reason, such as an explicit local contract, a tool-required path, or an established equivalent documentation directory; record that reason in the adopted map. Small projects may still combine roles in the root README. Repair affected references when moving documents. This organization rule applies to setup, adaptation, or requested reorganization, not automatically to assessments or journal consolidation.
 
 Read [adoption.md](references/adoption.md) for this mode. Use only the templates that fill actual gaps:
 

@@ -4,6 +4,8 @@
 
 These local instructions own the documentation lifecycle. The journal README at `{{journal_readme}}` owns the single session template. The short overview at `{{overview}}` maps the maintained documents. `{{active_plan}}` is the sole operational source for priorities, dependencies, open decisions, and completion criteria.
 
+Maintain project documentation under `{{documentation_directory}}`. Keep root entry documents such as `README.md`, `AGENTS.md`, and `CLAUDE.md` in place; record any other location exceptions and their concrete reasons in the overview. Put new focused documents in the documentation home. Relocation belongs to an authorized setup/adaptation or reorganization; preserve useful content and repair affected links and tool/configuration references when moving files.
+
 Start with the overview. Read the plan when selecting, advancing, closing, adding, or reprioritizing work. Read full active entries under `{{journal_directory}}`, excluding the template, then the relevant focused contracts. Keep the active set small through documentation phases. Read archives only for a requested historical lookup or a directly relevant linked receipt.
 
 Code describes actual behavior; accepted decisions describe intended behavior. Preserve a decision when the implementation deviates and record the defect. Distinguish proposals, accepted decisions, implementation, local checks, commits, publication, deployment, and dated live evidence.
