@@ -67,6 +67,13 @@ The eight-file package fingerprint, using the method above, is:
 a1138061a9cdbad909f2a47d8492c53261ac48b146e60cf21cf8a3eb373d6dd9
 ```
 
+Publication and installation were checked separately:
+
+- Revision `c5be80f868f02f5f3f8719b2fa362cdf0c3c3e53` was pushed to `main`, and its [GitHub structural validation](https://github.com/goranvuc/project-docs-workflow/actions/runs/37026262514) passed.
+- The bundled installer downloaded that exact GitHub revision into a new temporary directory. All eight files matched the reviewed source byte-for-byte.
+- The existing user installation was checked against 0.1.0 with no local changes found, moved to a recoverable backup outside scanned skill directories, and replaced with the verified download. All eight installed files matched 0.1.1; the backup retained the recorded 0.1.0 fingerprint.
+- Codex listed the previous installed skill in a subsequent turn, confirming discovery of that installation. The updated files are verified on disk; a new interactive invocation after replacement is a separate check.
+
 ## Limits and maintenance
 
 Structural validation does not check external URLs, template customization, claim truth, semantic transfer, or agent judgment. Review these separately. The built-in installer was inspected for its GitHub-folder interface, destination handling, and refusal to overwrite an existing installation. Other installer versions may differ; use the actual path and result reported by Codex.
