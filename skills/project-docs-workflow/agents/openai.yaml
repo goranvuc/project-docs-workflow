@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Docs Workflow"
+  short_description: "Keep project decisions, plans, and evidence aligned"
+  default_prompt: "Use $project-docs-workflow to assess this project's documentation and recommend the smallest useful changes."
